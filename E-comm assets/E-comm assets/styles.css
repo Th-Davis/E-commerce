@@ -68,10 +68,10 @@ li {
 }
 
 header {
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
 }
 
-header__container {
+.header__container {
     padding: 32px;
     width: 100%;
     max-width: 720px;
@@ -144,7 +144,7 @@ HIGHLIGHTS
     display: flex;
 }
 
-highlight {
+.highlight {
     padding: 0 24px;
     width: calc(100% / 3);
     display: flex;
