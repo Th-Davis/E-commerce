@@ -23,18 +23,18 @@
           <i class="fas fa-bars"></i>
         </button>
         <div class="menu__backdrop">
-          <button class="btn__menu btn__menu--close" closeMenu()>
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
             <i class="fas fa-times"></i>
           </button>
           <ul class="menu__link">
             <li class="menu__list">
-              <a href="#" class="menu__link">Home</a>
+              <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
             </li>
             <li class="menu__list">
-              <a href="#features" class="menu__link">Books</a>
+              <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
             </li>
             <li class="menu__list">
-              <a class="menu__link no--cursor">Contact</a>
+              <a class="menu__link no--cursor" onclick="closeMenu()">Contact</a>
             </li>
           </ul>
          </div>
@@ -45,7 +45,9 @@
                 <div class="header__description">
                     <h1>United States's most awarded online library platform</h1>
                     <h2>Find your dream book with <span class="purple">Library</span></h2>
-                    <button class="btn">Browse books</button>
+                    <a href="features">
+                      <button class="btn">Browse books</button>
+                  </a>
                 </div>
                 <figure class="header__img--wrapper">
                     <img src="./assets/Undraw_Books.svg" alt="">
@@ -53,14 +55,20 @@
             </div>
         </header>
       </section>
+
       <main>
         <section id="highlights">
           <div class="container">
             <div class="row">
-                    <h2 class="section__title">
-                        Why choose <span class="purple">Library</span>                   
-                    </h2> 
-                    <div class="highlight__wrapper">
+              <h2 class="section__title">
+                Why choose <span class="purple">Library</span>                   
+              </h2>
+            </div>
+          </div>
+        </section>
+        
+        <section id="highlight">
+                            <div class="highlight__wrapper">
                       <div class="highlight">
                         <div class="highlight__img">
                           <i class="fa-solid fa-bolt" style="color: rgb(80, 30, 30);"></i>            
@@ -93,14 +101,14 @@
                         <p class="highlight__para">
                             Get your hands on popular books for as little as $10.
                         </p>
-                        </div>
-                    </div>
-                    </div>  
+                       </div>
+                     </div>
+                   </div>  
+                 </div>
                 </div>
-            </div>
         </section>
 
-        <section id="Featured">
+        <section id="Features">
           <div class="container">
             <div class="row">
               <h2 class="section__title">
